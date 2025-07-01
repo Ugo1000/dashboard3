@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", Courier, monospace;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+.sidebar {
+  background-color: #239ff1;
+  color: white;
+  height: 100vh;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 30px 40px;
+}
+
+.logo-text img {
+  height: 40px;
+  width: 40px;
+  margin-right: 5px;
+  background-color: red;
+}
+
+.icon-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px 40px;
+}
+
+.icon-text p {
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.icon-text img {
+  height: 25px;
+  width: 25px;
+  margin-right: 5px;
+}
+
+.split {
+  margin-top: 50px;
+}
+
+/* MAIN-CONTENT */
+.main {
+  background-color: white;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 20% 80%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+
+  /* TEsting */
+
+  /* try box shadow here  */
+}
+
+.navbar,
+.left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5px 20px;
+
+  /*  */
+  /* background-color: yellow; */
+}
+
+.search-input {
+  border-radius: 15px;
+  border: 5px solid #d4d4d4;
+  width: 550px;
+  background-color: rgb(204, 214, 216);
+  margin-right: 300px;
+  margin-left: 15px;
+}
+.navbar > img {
+  width: 25px;
+  height: 25px;
+}
+
+.navbar .ghost-buster,
+.ghost-buster-welcome {
+  width: 50px;
+  height: 50px;
+  margin: 0 20px;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px 20px;
+
+  /*  */
+  /* background-color: greenyellow; */
+}
+.welcome-text {
+  font-size: medium;
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* width: 50%; */
+}
+.btn {
+  background-color: #239ff1;
+  color: #fff;
+  font-weight: 600;
+  height: 40px;
+  width: 100px;
+  border: 1px solid;
+  border-radius: 20px;
+  margin: 0 15px;
+}
