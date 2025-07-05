@@ -26,7 +26,7 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  margin: 30px 40px;
+  margin: 40px 40px;
 }
 
 .logo-text img {
@@ -42,18 +42,25 @@ body {
   justify-content: flex-start;
   align-items: center;
   margin: 20px 40px;
-  /* cursor: pointer; */
+  cursor: pointer;
 }
 .icon-text:hover {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
   transform: scale(1.02);
+  font-weight: 900;
+  font-size: large;
 }
 
 .icon-text p {
   margin-left: 15px;
   font-size: 16px;
   font-weight: 500;
+}
+
+.icon-text p:hover {
+  font-weight: 900;
+  font-size: x-large;
 }
 
 .icon-text img {
@@ -201,15 +208,6 @@ body {
 }
 
 /* ANNOUNCEMENT AND TRENDS  */
-.announcement-trends {
-  /* background-color: #239ff1; */
-  /* display: flex;
-  flex-direction: column;
-  gap: 10px; */
-
-  /* justify-content: space-between; Even spacing between ann and trending */
-  /* height: 100%; It now properly inherits from .content */
-}
 
 .ann,
 .trending {
@@ -222,8 +220,9 @@ body {
 .ann-card,
 .trend-card {
   width: 80%;
-  height: 50%;
+  height: 70%;
   background-color: #fff;
+  /* background: red; */
   border-radius: 10px;
   padding: 10px;
   margin-bottom: 15px;
@@ -232,11 +231,25 @@ body {
 
 .ann-card:hover,
 .trend-card:hover {
-  background-color: #f5f5f5;
+  /* background-color: #f5f5f5; */
   box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
 }
+
+.ann-text {
+  padding: 10px 5px;
+}
 .ann-text h6 {
-  font-size: 16px;
+  font-size: 14px;
+}
+
+.ann-text p {
+  font-size: 12px;
+  color: #737373;
+}
+
+.divider {
+  border: 1px sold red;
+  width: 100%;
 }
 
 /* testing  */
@@ -244,4 +257,33 @@ body {
 .announcement-trends {
   display: grid;
   grid-template-rows: 50% 50%;
+  height: 100%;
+}
+
+.announcement-trends {
+  margin-top: 40px;
+}
+
+.announcement-trends h6 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.ann h4 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Trends section */
+
+.trend-image-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.trend-image-text img {
+  width: 40px;
+  height: 40px;
 }
